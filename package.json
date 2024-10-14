@@ -10,9 +10,6 @@
     "type": "git",
     "url": "https://github.com/gijslaarman/styleguide.git"
   },
-  "scripts": {
-    "semantic-release": "semantic-release"
-  },
   "license": "ISC",
   "author": "Gijs Laarman",
   "exports": {
@@ -27,6 +24,9 @@
     "typescript",
     "stylelint"
   ],
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
   "prettier": "./prettier",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^8.9.0",
@@ -46,6 +46,10 @@
     "semantic-release": "^24.1.2",
     "typescript": "^5.6.3",
     "typescript-eslint": "^8.9.0"
+  },
+  "packageManager": "pnpm@9.8.0",
+  "engines": {
+    "node": ">=18.18"
   },
   "publishConfig": {
     "access": "public"
