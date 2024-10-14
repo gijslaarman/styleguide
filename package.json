@@ -1,13 +1,27 @@
 {
   "name": "@gijslaarman/styleguide",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Styleguides written by Gijs Laarman.",
   "keywords": [
     "eslint",
     "prettier"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gijslaarman/styleguide.git"
+  },
   "license": "ISC",
   "author": "Gijs Laarman",
+  "exports": {
+    "./eslint/*": "./eslint/*.js",
+    "./prettier": "./prettier/index.js",
+    "./typescript/node20": "./typescript/tsconfig.node20.json"
+  },
+  "files": [
+    "eslint",
+    "prettier",
+    "typescript"
+  ],
   "prettier": "./prettier",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^8.9.0",
@@ -20,8 +34,11 @@
     "prettier-plugin-packagejson": "^2.5.3"
   },
   "devDependencies": {
+    "@eslint/js": "^9.12.0",
     "eslint": "^9.12.0",
+    "globals": "^15.11.0",
     "prettier": "^3.3.3",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.9.0"
   }
 }
