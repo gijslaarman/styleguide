@@ -37,16 +37,9 @@ npm install prettier --save-dev
 
 ```json
 {
-  "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  },
+  "extends": "@gijslaarman/styleguide/typescript/node20",
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "exclude": ["node_modules"]
 }
 ```
 
@@ -55,3 +48,7 @@ npm install prettier --save-dev
 ```bash
 npm install typescript --save-dev
 ```
+
+### Stylelint
+
+> Coming soon
