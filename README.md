@@ -1,5 +1,7 @@
 # Gijs Laarman's Styleguide
 
+[![Node.js Package](https://github.com/gijslaarman/styleguide/actions/workflows/npm-publish.yml/badge.svg?branch=main)](https://github.com/gijslaarman/styleguide/actions/workflows/npm-publish.yml)
+
 Inspired by Vercel's styleguide: https://github.com/vercel/style-guide but less strict.
 For personal use, feel free to fork it.
 
