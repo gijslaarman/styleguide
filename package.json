@@ -15,7 +15,7 @@
   "exports": {
     "./eslint/*": "./eslint/*.js",
     "./prettier": "./prettier/index.js",
-    "./typescript/node20": "./typescript/tsconfig.node20.json",
+    "./typescript/node20": "./typescript/node20.tsconfig.json",
     "./stylelint/*": "./stylelint/*.js"
   },
   "files": [
