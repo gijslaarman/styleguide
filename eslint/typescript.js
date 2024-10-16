@@ -22,6 +22,7 @@ export default [
         { argsIgnorePattern: '^_' },
       ], // Allow unused vars prefixed with `_`
       '@typescript-eslint/explicit-module-boundary-types': 'off', // Turn off explicit return types for module boundaries
+      'tsdoc/syntax': 'warn', // https://tsdoc.org/
     },
   },
 ]
