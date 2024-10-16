@@ -1,11 +1,4 @@
-import globals from 'globals'
-import pluginJs from '@eslint/js'
-import tseslint from 'typescript-eslint'
+import baseConfig from './eslint/base.mjs'
+import typescriptConfig from './eslint/typescript.mjs'
 
-export default [
-  { extends: ['./eslint/_base.js'] },
-
-  { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
-  pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
-]
+export default [...baseConfig, ...typescriptConfig]

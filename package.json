@@ -13,8 +13,12 @@
   "license": "ISC",
   "author": "Gijs Laarman",
   "exports": {
-    "./eslint/*": "./eslint/*.js",
-    "./prettier": "./prettier/index.js",
+    "./eslint/*": {
+      "import": "./eslint/*.mjs"
+    },
+    "./prettier": {
+      "require": "./prettier/index.cjs"
+    },
     "./typescript/node20": "./typescript/node20.tsconfig.json",
     "./stylelint/*": "./stylelint/*.js"
   },
@@ -31,6 +35,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^8.9.0",
     "@typescript-eslint/parser": "^8.9.0",
+    "@typescript-eslint/typescript-estree": "^8.9.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-import-resolver-typescript": "^3.6.3",
